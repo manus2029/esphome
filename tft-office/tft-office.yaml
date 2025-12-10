@@ -146,9 +146,9 @@ globals:
 display:
   - platform: ili9xxx
     model: ST7789V
-    cs_pin: 33
-    dc_pin: 5
-    reset_pin: 16
+    cs_pin: 15
+    dc_pin: 2
+    reset_pin: 4
     invert_colors: False
     rotation: 270
     ## The panels will redraw themselves completely.
@@ -170,7 +170,7 @@ touchscreen:
   ## Do not give this an `id` of `touch` as that appears to clash with something
   ## internal to the touchscreen component.
   id: touchid
-  cs_pin: 32
+  cs_pin: 21
   # ResinChem Tech found using interrupt_pin to be unreliable. While
   # I didn't have these issues, I find it works fine without it.
   #interrupt_pin: 21
@@ -233,7 +233,7 @@ touchscreen:
 # Define a PWM output on the ESP32
 output:
   - platform: ledc
-    pin: 17
+    pin: 13
     id: backlight
 
 time:
