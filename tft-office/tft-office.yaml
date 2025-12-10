@@ -33,21 +33,14 @@
 esphome:
   name: tft-office
   #friendly_name: tft-office
-  packages:
-        my_package: # A unique name for your package
-          url: https://github.com/manus2029/esphome/tree/main/tft-office # URL of your GitHub repository
-          ref: main # The branch or tag to use (e.g., main, master, v1.0.0)
-          files:
-            - path/to/your/tft-office.yaml # The path to the file within the repository
-            # - another/file.yaml # You can include multiple files
-  switch: !include my_package/path/to/you/tft-room-time-temp-wind.h
+ 
   
-  #includes:
-   # - tft-room-time-temp-wind.h
+  includes:
+    - tft-room-time-temp-wind.h
     #file: "Library/tft-room-time-temp-wind.h"
   
-  #libraries:
-    #esphome-display-panel=https://github.com/manus2029/esphome_display_panel/blob/main/src/display-panel.h
+  libraries:
+    esphome-display-panel=https://github.com/manus2029/esphome_display_panel/blob/main/src/display-panel.h
     #esphome-display-panel="esphome/library"
     #file: "Library/library.json"
     #id: esphome-display-panel
