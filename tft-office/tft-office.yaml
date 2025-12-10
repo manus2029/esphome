@@ -41,7 +41,7 @@ esphome:
     #file: "Library/tft-room-time-temp-wind.h"
   
   libraries:
-    esphome-display-panel=https://github.com/manus2029/esphome_display_panel/blob/main/src/display-panel.h
+    esphome-display-panel=https://github.com/manus2029/esphome-display-panel.git#v0.0.14
     #esphome-display-panel="esphome/library"
     #file: "Library/library.json"
     #id: esphome-display-panel
